@@ -1,6 +1,7 @@
 import TopBar from "./components/header/TopBar";
 import MiddleBar from "./components/header/MiddleBar";
 import BottomBar from "./components/header/BottomBar";
+import Hero from "./components/hero/Hero";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./Theme";
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <TopBar />
           <MiddleBar />
           <BottomBar />
+          <Hero />
         </ThemeProvider>
       </ColorModeContext.Provider>
     </>
