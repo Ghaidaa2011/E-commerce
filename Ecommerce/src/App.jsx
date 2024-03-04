@@ -14,8 +14,14 @@ function App() {
           <TopBar />
           <MiddleBar />
           <BottomBar />
-          <Box bgcolor={theme.palette.bg}>
+          <Box
+            bgcolor={
+              // @ts-ignore
+              theme.palette.bg.main
+            }
+          >
             <Hero />
+            {/* <Main /> */}
           </Box>
         </ThemeProvider>
       </ColorModeContext.Provider>
